@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+header {
+    background-color: #262933;
+    padding: 10px;
+}
+
+header .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-item a {
+    color: grey !important;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: .2s ease-in;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #fff !important;
+}
+
+.social-box {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 70px;
+}
+
+.social-box li {
+    margin-right: 15px;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 30px;
+}
+
+.social-box li a i {
+    color: #262933;
+}
+
+.social-box li:hover {
+    transform: scale(1.2, 1.1);
+    box-shadow: 0px 0px 2px 2px #fff;
+    transition: .4s ease;
+}
+
+
+/* section first media */
+
+.content {
+    margin: 0 auto;
+}
+
+.photo_box {
+    position: relative;
+    top: -90px;
+}
+
+.content img {
+    height: 500px;
+    width: 100%;
+}
+
+.content .text {
+    position: relative;
+    top: -250px;
+    color: #fff;
+    z-index: 1;
+}
+
+.empty {
+    background-color: #262933;
+    padding: 36px;
+}
+
+.photo_box .empty h3,
+p {
+    color: #fff;
+}
+
+.empty p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button_box {
+    display: flex;
+    justify-content: center;
+}
+
+.full_b {
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: rgb(78, 170, 177);
+    transition: .2s ease-in-out;
+    border: none;
+}
+
+.full_b:hover {
+    color: #fff;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.full_b:focus {
+    border: none;
+    outline: none;
+}
+
+.empty_b {
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: transparent;
+    transition: .2s ease-in-out;
+    border: 1px solid #fff;
+}
+
+.empty_b:hover {
+    color: #fff;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.empty_b:focus {
+    border: none;
+    outline: none;
+}
+
+.template img {
+    height: 350px;
+}
+
+.text-box .second_text {
+    color: grey;
+    font-size: 12px;
+}
+
+
+/* section first media end */
+
+
+/* section work  */
+
+.work {
+    background-color: grey;
+}
+
+.work_content {
+    padding: 16px;
+}
+
+.work_box {
+    text-align: center;
+    padding: 6px;
+}
+
+.work_box i {
+    font-size: 45px;
+    color: #fff;
+}
+
+.work_box p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* section work end */
+
+
+/* start projects */
+
+.heading_projects h4,
+p {
+    color: grey;
+    text-align: center;
+}
+
+.projects_box img {
+    width: 100%;
+}
+
+.heading_client h4,
+p {
+    color: grey;
+    text-align: center;
+}
+
+.client_box img {
+    border-radius: 70%;
+    width: 50%;
+}
+
+.client_box_content {
+    text-align: center;
+}
+
+
+/* end projects */
+
+
+/* footer */
+
+footer {
+    background-color: #262933;
+    padding: 16px;
+}
+
+.footer_text {
+    color: #fff;
+}
+
+
+/* footer end */
+
+
+/* Media Query */
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .content img {
+        height: 310px;
+        width: 100%;
+    }
+    .photo_box {
+        position: relative;
+        top: 0;
+    }
+    .content .text {
+        position: relative;
+        top: -270px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .social-box li {
+        margin-left: -30px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413px) {
+    .social-box li {
+        margin-left: -40px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
+    .social-box li {
+        margin-left: -40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .social-box li {
+        margin-left: -30px;
+    }
+    .photo_box {
+        position: relative;
+        top: -150px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .photo_box {
+        position: relative;
+        top: -150px;
+    }
+}
